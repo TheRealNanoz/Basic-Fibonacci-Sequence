@@ -12,8 +12,7 @@ class sequence: #create sequence
         while current < max: # makes sure we do not go over the maximum value
             sleep(0.1)
             print(current) #prints the value in current
-            current = current + previous # updates current value to the sum of current + previous
-            previous = current # takes current value as previous
+            current, previous = current + previous, current # updates current value to the sum of current + previous
         return current # returns the current value once the loop is exited
 
     def sleepFalse(self, max):
@@ -24,8 +23,7 @@ class sequence: #create sequence
         current = current + 1 # set the next value as the current + 1
         while current < max: # makes sure we do not go over the maximum value
             print(current) #prints the value in current
-            current = current + previous # updates current value to the sum of current + previous
-            previous = current # takes current value as previous
+            current, previous = current + previous, current # updates current value to the sum of current + previous
         return current # returns the current value once the loop is exited
 
 
